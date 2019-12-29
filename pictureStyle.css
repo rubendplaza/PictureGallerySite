@@ -1,0 +1,38 @@
+body{
+  margin: 0px;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h1{
+  font-family: fantasy;
+  font-size: 3em;
+  border-bottom: 2px solid pink;
+  border-right: 2px solid pink;
+  width: 400px;
+  text-align: center;
+  /* for "importing" these features that aren't yet supported by a browser */
+  -moz-box-shadow: 4px 4px 5px lightpink;
+  -ms-box-shadow: 4px 4px 5px lightpink;
+  -webkit-box-shadow: 4px 4px 5px lightpink;
+  -o-box-shadow: 4px 4px 5px lightpink;
+  box-shadow: 4px 4px 5px lightpink;
+  margin-top: 20px;
+}
+
+img{
+  width: 450px;
+  height: 300px;
+  margin: 10px;
+  /* want image to transition whenever an action is taken on it, all the properties to transition in 1s */
+  transition: all 1s;
+}
+
+img:hover{
+  /* when u hover want to scale by 1.1 */
+  transform: scale(1.05);
+}
